@@ -150,7 +150,7 @@ app.get('/islam',  async(req, res) => {
   });
 })
 
-app.get('/game', , async(req, res) => {
+app.get('/game',  async(req, res) => {
   let getkey = await getApikey(req.user.id)
   let { apikey, username } = getkey
   res.render('game', {
